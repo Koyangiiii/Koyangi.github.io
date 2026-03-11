@@ -13,4 +13,15 @@
         <p>กำลังหัดเขียนเว็บผ่าน GitHub Pages ครับ</p>
     </div>
 </body>
+    <button onclick="changeColor()" style="padding: 10px; margin-top: 20px; cursor: pointer;">
+    กดเพื่อเปลี่ยนสีพื้นหลัง
+</button>
+
+<script>
+function changeColor() {
+    const colors = ['#ffadad', '#ffd6a5', '#fdffb6', '#caffbf', '#9bf6ff'];
+    const randomColor = colors[Math.floor(Math.random() * colors.length)];
+    document.body.style.backgroundColor = randomColor;
+}
+</script>
 </html>
